@@ -36,3 +36,15 @@ background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, F
 .inputcity{
    margin-top: 50px;
 }
+.footer {
+    
+   
+    color: white;
+    margin-bottom: 0px;
+}
+.pf{
+    font-family:  'Fredericka the Great', cursive;
+    color: aliceblue;
+   text-align: center;
+   margin-top: 200px;
+}
