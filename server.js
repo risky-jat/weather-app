@@ -3,6 +3,8 @@ const app = express()
 const bodyParser = require('body-parser')
 const request = require('request')
 
+const SERVER_PORT = process.env.PORT || 8080
+
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({ extended : true}));
 app.set('view engine' , 'hbs')
@@ -33,6 +35,6 @@ app.post('/' , (req,res) => {
 
 
 
-app.listen(8080 , () =>{
+app.listen(SERVER_PORT, () =>{
     console.log('server started at '+ 'http://localhost:8080')
 })
