@@ -1,0 +1,38 @@
+
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+body {
+background: #c31432;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.show{
+    background-color: green;
+}
+.plshow{
+    background-color: rebeccapurple;
+}
+.clshow{
+    
+    font-family:  'Fredericka the Great', cursive;
+
+    font-weight: bold;
+    text-align: center;
+}
+.weather {
+ font-family:  'ZCOOL KuaiLe', cursive;
+  color: aliceblue;
+  text-align: center;
+  margin-top: 100px; 
+   font-size: 40px;
+}
+
+.button {
+  margin-top: 50px;
+  margin-left: 460px;
+}
+.inputcity{
+   margin-top: 50px;
+}
