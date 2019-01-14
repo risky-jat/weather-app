@@ -16,7 +16,7 @@ app.get('/' , (req,res) =>{
 
 app.post('/' , (req,res) => {
        let city = req.body.city_name
-       let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=83140eda048e6595136fe99194c5a9ea`
+       let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=83140eda048e6595136fe99194c5a9ea`
        request(url,function(error,response,body) {
                    let weather_json = JSON.parse(body)  
                    console.log(weather_json) 
