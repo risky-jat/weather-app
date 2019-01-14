@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>weather app</title>
+</head>
+<body>
+    <div class="container">
+            <form method="POST" action="/">
+                <input type="text " placeholder="city" name="city_name" required>
+                <button  value="Get Weather">click</button>
+           </form>
+           <div class="container">
+          {{weather_data.weather.city}}
+          {{weather_data.weather.temperature}}
+          {{weather_data.weather.description}}
+          <img src="http://openweathermap.org/img/w/{{weather_data.weather.icon}}.png" >
+           </div>
+    </div>
+       
+</body>
+</html>
