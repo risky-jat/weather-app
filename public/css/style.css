@@ -20,6 +20,7 @@ background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, F
      color: aliceblue;
     font-weight: bold;
     text-align: center;
+    letter-spacing: 2px;
 }
 .weather {
  font-family:  'ZCOOL KuaiLe', cursive;
