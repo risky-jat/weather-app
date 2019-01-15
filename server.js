@@ -28,7 +28,11 @@ app.post('/' , (req,res) => {
                         city:city,
                         temperature:Math.round(weather_json.main.temp),
                         description:weather_json.weather[0].description,
-                        icon:weather_json.weather[0].icon
+                        icon:weather_json.weather[0].icon,
+                        pressure:weather_json.main.pressure,
+                        humidity:weather_json.main.humidity,
+                        min_temp:weather_json.main.temp_min,
+                        max_temp:weather_json.main.temp_max
                     }
                     let weather_data = {weather:weather}
                       res.render('index' ,{weather_data}) 
