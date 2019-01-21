@@ -2,26 +2,18 @@
 @import url('https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe');
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
-body {
-<<<<<<< HEAD
-background: #c31432;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+/*body {
+ background: #c31432;  
+ background: -webkit-linear-gradient(to right, #240b36, #c31432);  
+ background: linear-gradient(to right, #240b36, #c31432); 
 
-=======
-/* background: #c31432;  /* fallback for old browsers */
-/* background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
-/* background: linear-gradient(to right, #240b36, #c31432); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ */ */
-
-}
+}*/
 #particles-js{
     position: absolute;
     width: 100%;
     height:100%;
     background:#c31432;
 }
->>>>>>> 3968b3da5a19caef3bf7d92112a4b496e21861af
 .show{
     background-color: green;
 }
