@@ -130,4 +130,8 @@ particlesJS('particles-js',
     }
   }
 
+<<<<<<< HEAD
 );
+=======
+);
+>>>>>>> 3968b3da5a19caef3bf7d92112a4b496e21861af
