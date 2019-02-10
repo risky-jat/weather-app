@@ -5,14 +5,17 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node server.js"
+    "start": "node server.js"
   },
   "author": "Malik",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "connect-flash": "^0.1.1",
+    "cookie-session": "^2.0.0-beta.3",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
+    "flash": "^1.1.0",
     "hbs": "^4.0.1",
     "request": "^2.88.0"
   }

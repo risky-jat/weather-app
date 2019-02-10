@@ -16,6 +16,10 @@ body {
     background: linear-gradient(to right, #240b36, #c31432); 
    
 }
+.error{
+    font-family: 'ZCOOL KuaiLe', cursive;
+    color: aliceblue;
+}
 .show{
     background-color: green;
 }

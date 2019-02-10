@@ -2,16 +2,20 @@ const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
 const request = require('request')
-
+const cookieSession = require('cookie-session')
+const flash = require('connect-flash')
 const SERVER_PORT = process.env.PORT || 8080
 
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({ extended : true}));
 app.set('view engine' , 'hbs')
-
-app.get('/' , (req,res) =>{
-    res.render('index',{weather_data:null})
-   
+app.use(cookieSession({
+    maxAge: 24 * 60 *60 *1000 ,
+    keys: 'hjkadgfahdskfjhgadskjgfjkasdg'
+}))
+    app.use(flash());
+ app.get('/' , (req,res) =>{
+    res.render('index',{weather_data:null,error:null})
 })
 
 app.post('/' , (req,res) => {
@@ -21,7 +25,7 @@ app.post('/' , (req,res) => {
                    let weather_json = JSON.parse(body)  
                    console.log(weather_json) 
                   if(weather_json.main === undefined) {
-                     res.send('City Not Found')
+                     res.render('index' , {error:'city not found'})
                   }      
                   else {
                     let weather = {
@@ -35,7 +39,7 @@ app.post('/' , (req,res) => {
                         max_temp:weather_json.main.temp_max
                     }
                     let weather_data = {weather:weather}
-                      res.render('index' ,{weather_data}) 
+                      res.render('index' ,{weather_data,error:null}) 
                   }        
                    
        })
